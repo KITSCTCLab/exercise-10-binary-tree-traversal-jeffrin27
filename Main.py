@@ -43,9 +43,7 @@ def postorder(root) -> None:
     postorder(root.left_child)
     postorder(root.right_child)
     print(root.data, end = " ")
-
-
-# Do not change the following code
+    # Do not change the following code
 input_data = input()
 flag = True
 root = None
@@ -55,6 +53,9 @@ for item in input_data.split(', '):
         flag = False
     else:
         insert(root, int(item))
+
+
+
 inorder(root)
 print()
 preorder(root)
